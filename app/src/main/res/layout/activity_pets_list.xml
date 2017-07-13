@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/card_margin"
+    card_view:cardCornerRadius="@dimen/card_radius"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginStart="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_marginEnd="@dimen/card_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pet6"
+            android:scaleType="fitCenter"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ContentDescription"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibLike"
+                    android:layout_width="@dimen/like_size"
+                    android:layout_height="@dimen/like_size"
+                    android:background="@drawable/icons8_dog_bone_50"
+                    tools:ignore="ContentDescription"
+                    android:layout_marginEnd="@dimen/marging_icon_text"
+                    android:layout_marginRight="@dimen/marging_icon_text"
+                    android:elevation="@dimen/action_bar_elevation"/>
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_name_size"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/tvCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/likes_count"
+                        android:textSize="@dimen/text_name_size"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/marging_icon_text"
+                        android:layout_marginRight="@dimen/marging_icon_text"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/like_size"
+                        android:layout_height="@dimen/like_size"
+                        android:src="@drawable/icons8_dog_bone_filled_50"
+                        tools:ignore="ContentDescription"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
